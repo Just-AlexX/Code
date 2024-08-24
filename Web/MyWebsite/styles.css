@@ -1,0 +1,143 @@
+body, html {
+    height: 100%; /* Extend the height for scrolling */
+    margin: 0;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    width: 100%;
+    align-items: center; 
+
+    
+}
+
+.title-show {
+    margin: 0;
+    padding-top: 50px; /* Space between the top of the page and the title */
+    margin-bottom: 50px;
+    font-size: 10vw; /* Make the text larger */
+    color: white;
+    text-align: center;
+}
+
+
+/*  ABOUT PAGE */
+
+    /* ___STATUS___*/
+
+    /* -------------*/
+
+    .subtitle {
+        align-self: flex-start; /* Aligns the <h2> elements to the left */
+        margin-left: 2%; 
+        font-size: 200%;
+    }
+
+    .info-box {
+        margin-bottom: 5%;
+        font-size: 150%;
+        margin-right: 15%;
+        margin-left: 3%;
+    }
+
+
+
+
+/* IMAGE & TEXT ___PROJECTS___ */
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal-width columns */
+    gap: 20px; /* Space between grid items */
+    max-width: 2000px; /* Maximum width of the grid */
+    margin: 0 auto; /* Centers the grid on the page */
+
+
+    padding-bottom: 50px;
+}
+
+
+.image-item {
+    text-align: center; /* Centers the text below the image */
+    text-decoration: none; /* Removes underline from the entire link */
+    color: inherit; /* Inherits the color of the parent */
+    position: relative;
+}
+
+
+.image-item img {
+    width: 100%; /* Makes the image take the full width of the grid cell */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 15px; /* Rounds the corners of the images */
+    transition: transform 0.3s ease; /* Adds a hover effect */
+}
+
+.image-item:hover img {
+    transform: scale(1.03); /* Slightly enlarges the image on hover */
+}
+
+.image-description {
+    margin-top: 10px; /* Adds space between the image and text */
+    color: #ffffff; /* Text color */
+    font-size: 25px; /* Font size for the text */
+    line-height: 1.4; /* Line height for readability */
+    text-decoration: none; /* Removes underline from description text */
+    padding-left: 0; /* Aligns text with the image */
+    padding-right: 40px; /* Creates space 20px before the end of the image */
+    max-width: calc(100% - 20px); /* Ensures text width doesn't exceed image width minus 20px */
+    text-align: left; /* Aligns the text to the left */
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+/* ___Navigation___ */
+
+
+.bottom-nav {
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff; /* Darker background color */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for depth */
+    max-width: 500px; /* Centers the nav and limits its width */
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+
+.nav-item {
+    color: #000; /* Lighter text color */
+    text-decoration: none;
+    padding: 5px 20px; /* Space around each item */
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px; /* Round corners for each nav item */
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-item:hover, .nav-item.active {
+    background-color: rgba(0, 0, 0, 0.1); /* Slightly lighter background on hover */
+    color: #000; /* Full white color on hover or active state */
+    font-weight: bold;
+}
+
+
+
+
+/* ---------------------------------------------------------- */
+
+
+
+
